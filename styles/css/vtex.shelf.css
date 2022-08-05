@@ -1,0 +1,12 @@
+.relatedProducts {
+  margin-bottom: 5rem;
+  width: 100%;
+}
+
+.arrow {
+  color: #151f32cc;
+}
+
+.arrow:hover {
+  color: #151f3299;
+}

@@ -1,0 +1,119 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  //desktop
+  "header-layout.desktop": {
+    "children": ["sticky-layout#desktop"]
+  },
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#desktop"]
+  },
+  "flex-layout.row#desktop": {
+    "props": {
+      "blockClass": "header",
+      "paddingTop": 5,
+      "verticalAlign": "center",
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer",
+      "flex-layout.col#search-header",
+      "flex-layout.col#spacer",
+      "login",
+      "flex-layout.col#cart"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+  //mobile
+  "header-layout.mobile": {
+    "children": ["sticky-layout#mobile"]
+  },
+  "sticky-layout#mobile": {
+    "children": ["flex-layout.row#mobile"]
+  },
+  "flex-layout.row#mobile": {
+    "props": {
+      "blockClass": "header-mobile",
+      "paddingTop": 1,
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "colSizing": "auto",
+      "fullWidth": true
+    },
+    "children": [
+      "drawer",
+      "flex-layout.col#spacer",
+      "logo"
+    ]
+  },
+  "drawer": {
+    "props": {
+      "blockClass": "burguer-menu",
+      "isFullWidth": true,
+      "slideDirection": "vertical",
+      "maxWidth": "100vw",
+      "orientation": "vertical"
+    },
+    "children": [
+      "flex-layout.col#search-header",
+      "login",
+      "flex-layout.col#cart"
+    ]
+  },
+  //common
+  //space
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  //logo
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/logo/logo.png",
+      "heigh": "47",
+      "width": "59"
+    }
+  },
+  //search
+  "flex-layout.col#search-header": {
+    "props": {
+      "blockClass": "header",
+      "verticalAlign": "center"
+    },
+    "children": ["search-bar"]
+  },
+  "search-bar": {
+    // "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "blockClass": "header",
+      "placeholder": "Pesquisar"
+    }
+  },
+  //cart
+  "flex-layout.col#cart": {
+    "props": {
+      "blockClass": "header",
+      "verticalAlign": "center"
+    },
+    "children": ["minicart.v2"]
+  }
+}

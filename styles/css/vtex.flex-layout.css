@@ -1,0 +1,87 @@
+/* Flex Layout Header */
+.flexRow--header,
+.flexRowContent.flexRowContent--header-mobile {
+  background-color: #151f32;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.flexRowContent.flexRowContent--header {
+  padding: 0.75rem 2.5rem 0.5rem;
+}
+
+.flexRowContent.flexRowContent--header-mobile {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.flexCol.flexCol--header,
+.flexCol.flexCol--header-mobile {
+  flex-direction: row;
+  align-items: center;
+}
+
+.flexRowContent--header {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+/* Flex Layout Footer */
+.flexRow--price,
+.flexRowContent--price {
+  padding: 0;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* PDP */
+.flexRowContent--container-desktop {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.flexRowContent--container-desktop:first-child {
+  padding-left: 4rem;
+}
+
+/* PDP */
+.flexCol--productOne {
+  max-width: 1200px;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  border-top: 0.5rem solid #151f32;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.29);
+  -webkit-box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.29);
+  box-sizing: border-box;
+}
+
+.flexCol--productColOne {
+  max-width: 400px;
+}
+
+.flexCol--productColTwo {
+  max-width: 800px;
+  text-align: center;
+}
+
+.flexColChild--productOne {
+  width: 100%;
+}
+
+.flexCol--productColTwo :global(.vtex-button) {
+  background: linear-gradient(180deg, #ffc047 0, #fea600);
+  border-color: #fbb03b #fea600 #fea600;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  width: 12rem;
+}
+
+.flexCol--productColTwo :global(.vtex-button):hover {
+  background: linear-gradient(180deg, #ffc047 0, #fbb03b);
+  transition: all 0.15s ease-in;
+}

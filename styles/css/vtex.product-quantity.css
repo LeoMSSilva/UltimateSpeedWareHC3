@@ -1,0 +1,8 @@
+.quantitySelectorTitle,
+.quantitySelectorStepper :global(.vtex-styleguide-9-x-hideDecorators) {
+  text-align: center;
+  color: #151f32;
+  text-shadow: 0.075rem 0.075rem 0.075rem #151f3233;
+  font-size: 1rem;
+  font-weight: 400;
+}

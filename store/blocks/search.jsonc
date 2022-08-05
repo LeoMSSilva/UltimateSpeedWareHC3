@@ -1,0 +1,221 @@
+{
+  "store.search": {
+    "props": {
+      "context": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip"
+      }
+    },
+    "blocks": [
+      "search-result-layout"
+    ]
+  },
+  "search-result-layout": {
+    "blocks": [
+      "search-not-found-layout",
+      "search-result-layout.desktop",
+      "search-result-layout.mobile"
+    ]
+  },
+  //desktop search layout
+  "search-result-layout.desktop": {
+    "children": [
+      "rich-text#header-result",
+      "flex-layout.row#main-desktop"
+    ]
+  },
+  "flex-layout.row#main-desktop": {
+    "props": {
+      "blockClass": "container-desktop"
+    },
+    "children": [
+      "flex-layout.col#left-desktop",
+      "flex-layout.col#right"
+    ]
+  },
+  "flex-layout.col#left-desktop": {
+    "props": {
+      "verticalAlign": "top",
+      "width": "20%"
+    },
+    "children": [
+      "search-title.v2",
+      "filter-navigator.v3"
+    ]
+  },
+  "flex-layout.col#right": {
+    "props": {
+      "blockClass": "col-result-content"
+    },
+    "children": [
+      "order-by.v2",
+      "search-content",
+      "search-fetch-more"
+    ]
+  },
+  //mobile search layout
+  "search-result-layout.mobile": {
+    "children": [
+      "rich-text#header-result",
+      "flex-layout.row#main-mobile"
+    ]
+  },
+  "flex-layout.row#main-mobile": {
+    "props": {
+      "blockClass": "container-mobile"
+    },
+    "children": [
+      "flex-layout.col#col-mobile"
+    ]
+  },
+  "flex-layout.col#col-mobile": {
+    "props": {
+      "blockClass": "col-result-content"
+    },
+    "children": [
+      "search-title.v2",
+      "filter-navigator.v3",
+      "order-by.v2",
+      "search-content",
+      "search-fetch-more"
+    ]
+  },
+  //search not-found
+  "search-not-found-layout": {
+    "children": [
+      "search-title.v2",
+      "rich-text#title-not-found",
+      "search-result-layout.customQuery#search-not-found",
+      "image#not-found"
+    ]
+  },
+  "image#not-found": {
+    "props": {
+      "src": "https://raw.githubusercontent.com/Slender4571/Desafio/370deae80b2eadc3cab479d07ca0f56fb63bab6e/assets/not-found/404error.svg",
+      "maxHeight": 335,
+      "maxWidth": 335
+    }
+  },
+  "rich-text#title-not-found": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "## Nenhum resultado encontrado. \nVerifique se você digitou corretamente ou tente palavras-chave diferentes",
+      "blockClass": "title-not-found"
+    }
+  },
+  "search-result-layout.customQuery#search-not-found": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "orderByField": "OrderByTopSaleDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 4,
+        "queryField": "vtexio",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#not-found",
+      "search-result-layout.mobile#not-found"
+    ]
+  },
+  "search-result-layout.desktop#not-found": {
+    "props": {
+      "blockClass": "search-not-found"
+    },
+    "children": [
+      "search-content"
+    ]
+  },
+  "search-result-layout.mobile#not-found": {
+    "children": [
+      "search-content"
+    ]
+  },
+  //common
+  "search-title.v2": {
+
+  },
+  "rich-text#header-result": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Speedware Store \n Implementações de lojas com VTEX IO",
+      "textColor": "black",
+      "blockClass": [
+        "header-result",
+        "header-result-mobile"
+      ]
+    }
+  },
+  "filter-navigator.v3": {
+    "props": {
+      "blockClass": "filter-nav-search-result",
+      "maxItemsCategory": "10"
+    }
+  },
+  "order-by.v2": {
+    "props": {
+      "blockClass": "result-order-by"
+    }
+  },
+  //product grid
+  "search-content": {
+    "props": {
+      "blockClass": "search-content-gallery"
+    },
+    "blocks": [
+      "gallery#search-result",
+      "not-found"
+    ]
+  },
+  "gallery#search-result": {
+    "props": {
+      "blockClass": [
+        "gallery-search-result-mobile",
+        "gallery-search-result"
+      ]
+    },
+    "blocks": [
+      "product-summary.shelf#search"
+    ]
+  },
+  "product-summary.shelf#search": {
+    "props": {
+      "blockClass": "container-summary-search-result"
+    },
+    "children": [
+      "product-summary-image#search-result",
+      "product-summary-space",
+      "product-summary-name#search-result",
+      "product-summary-space",
+      "product-summary-description#search-result",
+      "product-summary-space",
+      "product-summary-price",
+      "product-summary-space",
+      "add-to-cart-button#search-result"
+    ]
+  },
+  "product-summary-image#search-result": {
+    "props": {
+      "blockClass": "image-search-result"
+    }
+  },
+  "product-summary-name#search-result": {
+    "props": {
+      "blockClass": "product-name-search-result"
+    }
+  },
+  "product-summary-description#search-result": {
+    "props": {
+      "blockClass": "description-search-result"
+    }
+  },
+  "add-to-cart-button#search-result": {
+    "props": {
+      "blockClass": "add-to-cart-button-search-result"
+    }
+  }
+}

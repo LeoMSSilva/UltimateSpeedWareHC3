@@ -1,0 +1,51 @@
+{
+  "product-summary.shelf#home": {
+    "children": [
+      "product-summary-image#shelf",
+      "product-summary-space",
+      "product-summary-name",
+      "product-summary-space",
+      "product-list-price#summary",
+      "product-selling-price#summary",
+      "product-price-savings#summary",
+      "product-summary-space",
+      "add-to-cart-button#summary-slider-home"
+    ],
+    "props": {
+      "blockClass": "summary-slider-home"
+    }
+  },
+  "product-summary-image#shelf": {
+    "props": {
+      "showBadge": false,
+      "aspectRatio": "1:1",
+      "maxHeight": 120
+    }
+  },
+  "product-summary-name": {
+    "props": {
+      "blockClass": "summary-slider-home"
+    }
+  },
+  "product-list-price#summary": {
+    "props": {
+      "blockClass": "summary-slider-home"
+    }
+  },
+  "product-selling-price#summary": {
+    "props": {
+      "blockClass": "summary-slider-home"
+    }
+  },
+  "product-price-savings#summary": {
+    "props": {
+      "markers": ["discount"],
+      "blockClass": "summary-slider-home"
+    }
+  },
+  "add-to-cart-button#summary-slider-home": {
+    "props": {
+      "text": "Adicionar ao carrinho"
+    }
+  }
+}

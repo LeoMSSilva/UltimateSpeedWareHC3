@@ -1,0 +1,126 @@
+/* Search Results Page */
+.imageContainer,
+.imageNormal,
+.image {
+  max-height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nameContainer {
+  line-height: 2rem;
+  padding: 0;
+}
+
+.productNameContainer,
+.productBrand,
+.description,
+.currencyContainer,
+.price_installmentContainer,
+.price_listPriceLabel,
+.price_sellingPriceLabel,
+.element :global(.vtex-button) {
+  text-shadow: 0.15rem 0.15rem 0.15rem #151f3233;
+}
+
+.productNameContainer,
+.productBrand {
+  color: #007dbc;
+  font-size: 1.1rem;
+  font-weight: 700;
+  word-wrap: break-word;
+  text-align: center;
+  line-height: 1.6rem;
+  width: 100%;
+}
+
+.description,
+.currencyContainer {
+  color: #151f32;
+}
+
+.price_sellingPriceLabel .price_installmentContainer,
+.price_listPriceLabel {
+  color: #151f32cc;
+}
+
+.description {
+  line-height: 1.5rem;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.priceContainer,
+.productPriceClass,
+.sellingPriceContainer,
+.sellingPrice,
+.currencyContainer,
+.price_className,
+.price_sellingPriceContainer,
+.price_sellingPrice {
+  padding: 0;
+  width: 100%;
+}
+
+.currencyContainer {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.price_sellingPriceContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price_sellingPriceContainer .price_sellingPriceLabel,
+.price_sellingPriceContainer .price_sellingPrice {
+  width: auto;
+  padding: 0;
+  margin: 0 0.3rem;
+}
+
+.spacer {
+  height: 1rem;
+}
+
+.element {
+  padding: 0;
+}
+
+.buyButton :global(.vtex-button),
+.element :global(.vtex-button) {
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #ffc047 0, #fea600);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-color: #fbb03b #fea600 #fea600;
+  color: #fcfcfc;
+  height: 2.5rem;
+  width: 98%;
+  padding: 0 1rem;
+  font-size: 0.95rem;
+  font-style: italic;
+  font-weight: 700;
+  border-radius: 0 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+.buyButton :global(.vtex-button):hover,
+.element :global(.vtex-button):hover {
+  background: linear-gradient(180deg, #ffc047 0, #fbb03b);
+  transition: all 0.15s ease-in;
+}
+
+.containerNormal {
+  margin: 0 0 3rem 3rem;
+  width: 16rem;
+  border-radius: 0 0.5rem;
+  padding: 0.5rem;
+  background-color: #cdcdcd66;
+  box-shadow: 0.125rem 0.125rem 0.25rem 0 #151f3233;
+  border: #151f3233 solid 0.001rem;
+  max-height: 20rem;
+}

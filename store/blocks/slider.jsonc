@@ -1,0 +1,85 @@
+{
+  "slider-layout#demo-images": {
+    "props": {
+      "blockClass": "demo-images",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      }
+    },
+    "children": [
+      "info-card#1",
+      "info-card#2",
+      "info-card#3",
+      "info-card#4",
+      "info-card#5",
+      "info-card#6"
+    ]
+  },
+  "info-card#1": {
+    "props": {
+      "imageUrl": "assets/banner/AtmosPhere.jpg",
+      "mobileImageUrl": "assets/banner/AtmosPhere-mobile.jpg",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "isFullModeStyle": true,
+      "callToActionMode": "none"
+    }
+  },
+  "info-card#2": {
+    "props": {
+      "imageUrl": "assets/banner/BitSized.jpg",
+      "mobileImageUrl": "assets/banner/BitSized-mobile.jpg",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "isFullModeStyle": true,
+      "callToActionMode": "none"
+    }
+  },
+  "info-card#3": {
+    "props": {
+      "imageUrl": "assets/banner/ConTroll.jpg",
+      "mobileImageUrl": "assets/banner/ConTroll-mobile.png",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "isFullModeStyle": true,
+      "callToActionMode": "none"
+    }
+  },
+  "info-card#4": {
+    "props": {
+      "imageUrl": "assets/banner/DreamScape.png",
+      "mobileImageUrl": "assets/banner/DreamScape-mobile.png",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "isFullModeStyle": true,
+      "callToActionMode": "none"
+    }
+  },
+  "info-card#5": {
+    "props": {
+      "imageUrl": "assets/banner/SpeedWare.png",
+      "mobileImageUrl": "assets/banner/SpeedWare-mobile.jpg",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "isFullModeStyle": true,
+      "callToActionMode": "none"
+    }
+  },
+  "info-card#6": {
+    "props": {
+      "imageUrl": "assets/banner/TravelLog.png",
+      "mobileImageUrl": "assets/banner/TravelLog-mobile.jpg",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "isFullModeStyle": true,
+      "callToActionMode": "none"
+    }
+  }
+}

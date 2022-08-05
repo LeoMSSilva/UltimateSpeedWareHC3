@@ -1,0 +1,147 @@
+.container {
+  width: 100%;
+}
+
+.logoContainer {
+  padding: 0 1rem;
+}
+
+.searchBarContainer {
+  padding: 0;
+}
+
+.imageElement {
+  margin: 3rem auto;
+}
+
+@media (max-width: 768px) {
+  .searchBarContainer {
+    margin-left: -0.5rem;
+  }
+
+  .searchBarContainer :global(.vtex-input-prefix__group) {
+    width: 93vw !important;
+  }
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #cdcdcd;
+  padding: 0;
+  width: 38rem;
+}
+
+.searchBarContainer :global(.vtex-input__suffix) {
+  background-color: transparent;
+  padding-right: 0;
+  padding-left: 10px;
+}
+
+:global(.vtex-styleguide-9-x-input) {
+  background-color: transparent;
+  color: #fcfcfc !important;
+  padding: 0 0.5rem !important;
+  font-weight: bold;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+
+:global(.vtex-styleguide-9-x-input)::placeholder {
+  color: #757577;
+}
+
+.searchBarIcon {
+  color: #fcfcfc;
+}
+
+.autoCompleteOuterContainer--header {
+  margin: 0 -0.5rem 0.25rem 0.5rem;
+  width: 38rem;
+}
+
+.searchBarIcon--header:hover {
+  color: #fea600;
+  transition: all 0.15s ease-in;
+}
+
+/* Slider Banner Home */
+.infoCardContainer {
+  width: 100%;
+  height: 32rem;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .infoCardContainer {
+    height: 100vh;
+    padding: 1rem;
+  }
+}
+
+/* PDP */
+.productImagesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.discountInsideContainer {
+  left: 0;
+  width: 3rem;
+  border-color: #fbb03b #fea600 #fea600;
+  background: linear-gradient(180deg, #ffc047 0, #fea600);
+}
+
+.productImage {
+  margin: 0 auto;
+}
+
+.productBrand {
+  color: #007dbc;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.productDescriptionTitle,
+.productDescriptionText .content,
+.shareLabel {
+  text-align: center;
+  color: #151f32;
+  text-shadow: 0.15rem 0.15rem 0.15rem #151f3233;
+}
+
+.productDescriptionTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.productDescriptionText .content {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.content {
+  color: #151f32;
+  font-weight: 300;
+}
+
+.savingPriceValue {
+  color: #0a7450;
+  font-weight: 700;
+}
+
+.showMoreButton {
+  background: linear-gradient(180deg, #ffc047 0, #fea600);
+  border-color: #fbb03b #fea600 #fea600;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.9rem;
+}
+
+.showMoreButton:hover {
+  background: linear-gradient(180deg, #ffc047 0, #fbb03b);
+  transition: all 0.15s ease-in;
+}

@@ -1,0 +1,42 @@
+{
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer"
+    ]
+  },
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#footer"
+    ]
+  },
+  "flex-layout.row#footer": {
+    "children": [
+      "flex-layout.row#copyright"
+    ]
+  },
+  "flex-layout.row#copyright": {
+    "props": {
+      "blockClass": "footer-copyright",
+      "fullWidth": true
+    },
+    "children": [
+      "rich-text#copyright"
+    ]
+  },
+  "rich-text#copyright": {
+    "props": {
+      "blockClass": "text-copyright",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Desafio de VTEX IO - Hiring Coders 2022 - [VTEX](https://vtex.com/br-pt) | [Gama Academy](https://www.gama.academy)",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5"
+    }
+  }
+}

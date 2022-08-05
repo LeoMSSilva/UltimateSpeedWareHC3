@@ -1,0 +1,54 @@
+/* Home Top Slider */
+.paginationDot {
+  margin-bottom: 1.5rem;
+  background-color: #b8b8b8;
+}
+
+.paginationDot--isActive {
+  background-color: #fea600;
+}
+
+/* Home Banners Slider */
+.caretIcon--demo-images,
+.caretIcon--demo-images:hover {
+  color: #ffffff;
+}
+
+.caretIcon--demo-images {
+  opacity: 0.2;
+}
+
+.caretIcon--demo-images:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .caretIcon {
+    display: none;
+  }
+
+  .sliderLayoutContainer--slider-products {
+    padding: 30px !important;
+  }
+}
+
+/* Home Products Slider */
+.caretIcon--slider-products,
+.caretIcon--slider-products:hover {
+  color: #151f32;
+  opacity: 1;
+}
+
+.caretIcon--slider-products {
+  opacity: 0.5;
+}
+
+.slide--slider-products {
+  margin-bottom: 50px;
+}
+
+.sliderTrackContainer--slider-products{
+  width: 96%;
+  margin: auto;
+  padding-right: 2.2rem;
+}

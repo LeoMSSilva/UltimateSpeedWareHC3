@@ -1,0 +1,23 @@
+.container {
+  margin-left: 3.5rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+.homeIcon,
+.caretIcon,
+.link,
+.term {
+  color: #151f32;
+  opacity: 0.6;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.homeIcon,
+.term {
+  font-weight: 600;
+  opacity: 0.7;
+  font-size: 1rem;
+}

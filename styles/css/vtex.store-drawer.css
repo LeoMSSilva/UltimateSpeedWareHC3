@@ -1,0 +1,43 @@
+.openIconContainer--burguer-menu {
+  color: #ffffff;
+}
+
+.openIconContainer--burguer-menu:hover {
+  color: #fea600;
+  transition: all 0.15s ease-in;
+}
+
+.closeIcon--burguer-menu {
+  color: #fea600;
+}
+
+.overlay--burguer-menu {
+  opacity: 0;
+}
+
+.drawer--burguer-menu,
+.overlay {
+  background-color: #151f32;
+}
+
+.childrenContainer {
+  padding: 1rem;
+}
+
+.childrenContainer--burguer-menu {
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.childrenContainer--burguer-menu :global(.vtex-button) {
+  background: linear-gradient(180deg, #ffc047 0, #fea600);
+  border-color: #fbb03b #fea600 #fea600;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  width: 93vw;
+}
+
+.childrenContainer--burguer-menu :global(.vtex-button):hover {
+  background: linear-gradient(180deg, #ffc047 0, #fbb03b);
+  transition: all 0.15s ease-in;
+}
