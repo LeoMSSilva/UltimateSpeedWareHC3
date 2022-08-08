@@ -1,0 +1,22 @@
+{
+  "extends": "@vtex/tsconfig",
+  "compilerOptions": {
+    "jsx": "react",
+    "noEmitOnError": true,
+    "lib": [
+      "dom"
+    ],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es2022",
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  },
+  "include": [
+    "./typings/*.d.ts",
+    "./**/*.tsx",
+    "./**/*.d.ts",
+    "./**/*.ts"
+  ]
+}
