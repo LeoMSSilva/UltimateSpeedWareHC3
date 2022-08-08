@@ -32,6 +32,32 @@
   margin: 0.5rem auto;
 }
 
+.heading--title-not-found {
+  /* margin-bottom: 0; */
+}
+
+/* .container--title-not-found {
+  margin-bottom: 2rem;
+} */
+
+/* Rich Text Search Result Mobile */
+/* .heading--header-result-mobile {
+  font-size: 33px;
+  font-weight: 500;
+}
+
+.paragraph--header-result-mobile {
+  font-size: 18px;
+  line-height: 30px;
+} */
+
+/* @media (max-width: 499px) {
+  .container--title-not-found {
+    padding: 10px;
+    border-bottom: 1px solid #cccccc;
+  }
+} */
+
 /* Rich Text Footer */
 .paragraph--text-copyright {
   color: #ffffff;
@@ -53,7 +79,8 @@
 /* Slider Products Home */
 .wrapper--title-product {
   font-size: 2rem;
+  text-shadow: 0.15rem 0.15rem 0.15rem #151f3233;
   color: #151f32;
-  font-weight: bold;
+  font-weight: 700;
   margin: 0 auto;
 }

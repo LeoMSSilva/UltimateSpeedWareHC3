@@ -1,4 +1,6 @@
 /* Search Results Page */
+/* .imageContainer--image-search-result,
+.image--image-search-result, */
 .imageContainer,
 .imageNormal,
 .image {
@@ -9,8 +11,8 @@
 }
 
 .nameContainer {
-  line-height: 2rem;
-  padding: 0;
+  line-height: 1.4;
+  padding: .8rem 0 0;
 }
 
 .productNameContainer,
@@ -21,7 +23,7 @@
 .price_listPriceLabel,
 .price_sellingPriceLabel,
 .element :global(.vtex-button) {
-  text-shadow: 0.15rem 0.15rem 0.15rem #151f3233;
+  text-shadow: 0.15rem 0.15rem 0.15rem #ecebebc2;
 }
 
 .productNameContainer,
@@ -31,26 +33,24 @@
   font-weight: 700;
   word-wrap: break-word;
   text-align: center;
-  line-height: 1.6rem;
+  line-height: 1.4;
   width: 100%;
 }
 
-.description,
-.currencyContainer {
-  color: #151f32;
-}
-
-.price_sellingPriceLabel .price_installmentContainer,
-.price_listPriceLabel {
-  color: #151f32cc;
-}
-
 .description {
-  line-height: 1.5rem;
-  font-size: 0.875rem;
+  color: red;
+  font-size: 1.1rem;
+  font-weight: 500;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.price_sellingPriceLabel,
+.price_installmentContainer {
+  color: #0a742a;
+  font-weight: 600;
+  margin-bottom: .2rem;
 }
 
 .priceContainer,
@@ -65,22 +65,11 @@
   width: 100%;
 }
 
-.currencyContainer {
+.price_sellingPriceContainer .currencyContainer {
   font-size: 1.2rem;
-  font-weight: 900;
-}
-
-.price_sellingPriceContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.price_sellingPriceContainer .price_sellingPriceLabel,
-.price_sellingPriceContainer .price_sellingPrice {
-  width: auto;
-  padding: 0;
-  margin: 0 0.3rem;
+  line-height: 1.4;
+  font-weight: 800;
+  color: #151f32;
 }
 
 .spacer {
@@ -101,7 +90,7 @@
   height: 2.5rem;
   width: 98%;
   padding: 0 1rem;
-  font-size: 0.95rem;
+  font-size: 0.80rem;
   font-style: italic;
   font-weight: 700;
   border-radius: 0 0.5rem;
@@ -118,9 +107,9 @@
   margin: 0 0 3rem 3rem;
   width: 16rem;
   border-radius: 0 0.5rem;
-  padding: 0.5rem;
-  background-color: #cdcdcd66;
+  padding: 0.7rem;
+  background-color: #f8f8f8c2;
   box-shadow: 0.125rem 0.125rem 0.25rem 0 #151f3233;
   border: #151f3233 solid 0.001rem;
-  max-height: 20rem;
+  max-height: 22rem;
 }

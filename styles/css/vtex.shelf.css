@@ -1,5 +1,6 @@
 .relatedProducts {
   margin-bottom: 5rem;
+  /* padding-right: 40px; */
   width: 100%;
 }
 
@@ -9,4 +10,14 @@
 
 .arrow:hover {
   color: #151f3299;
+}
+
+.title{
+  text-shadow: 0.15rem 0.15rem 0.15rem #151f3233;
+  color: #151f32;
+  font-weight: 700;
+}
+
+.sliderContainer{
+    padding-right: 45px;
 }

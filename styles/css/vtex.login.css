@@ -11,6 +11,9 @@
   border-radius: 0.5rem;
   color: #ffffff;
   background: linear-gradient(180deg, #ffc047 0, #fea600);
+  /* border: 0.05 solid;
+  padding: 0!important;
+  margin: 0; */
   border-color: #fbb03b #fea600 #fea600;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
   font-size: 1rem;
@@ -49,9 +52,14 @@
 .box {
   right: -5.6rem !important;
 }
+/*
+.accessCodeOptionBtn :global(.vtex-button) {
+  padding: 0.25rem;
+} */
 
 .accessCodeOptionBtn :global(.vtex-button),
 .emailPasswordOptionBtn :global(.vtex-button) {
+  /* font-size: 1.025rem; */
   text-transform: none;
   font-weight: 300;
 }
@@ -99,6 +107,14 @@
 .content--emailAndPassword {
 }
 
+/* .contentAlwaysWithOptions {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  width: 98vw;
+  padding: 1rem;
+} */
+
 .loginOptionsContainer,
 .contentForm,
 .contentFormVisible {
@@ -133,6 +149,7 @@
   .content--loginOptions,
   .contentInitialScreen {
     width: 100%;
+    /* background-color: transparent !important; */
   }
 
   .contentAlwaysWithOptions {
@@ -158,7 +175,11 @@
     max-width: 96vw !important;
     font-size: 0.8rem;
     padding: 0;
+    /* margin-left: 2vw; */
   }
+}
+
+@media (max-width: 420px) {
 }
 
 @media (max-height: 640px) {

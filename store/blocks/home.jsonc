@@ -2,8 +2,9 @@
   "store.home": {
     "blocks": [
       "slider-layout#demo-images",
-      "flex-layout.row#title-product",
+      "slider-component",
       "__fold__",
+      "flex-layout.row#title-product",
       "flex-layout.row#products"
     ]
   }
