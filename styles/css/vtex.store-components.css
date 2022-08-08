@@ -1,5 +1,5 @@
 .container {
-  /* padding: 0 0 1rem; */
+  padding: 0 0 1rem;
   width: 100%;
 }
 
@@ -82,10 +82,18 @@
 
 /* PDP */
 .productImagesContainer {
-  max-width: 25rem;
-  display: flex;
+  max-width: 800px;
   width: 100%;
-  margin-right: 7rem;
+  display: flex;
+  position: relative;
+}
+
+.productImagesContainer--carousel {
+  max-width: 36rem;
+}
+
+.productImage {
+  width: 100%;
 }
 
 .discountInsideContainer {
@@ -155,7 +163,30 @@
   transition: all 0.15s ease-in;
 }
 
-/*  */
+/* Mobile */
+@media (max-width: 768px) {
+  .productImagesContainer {
+    max-width: 450px;
+    width: 70%;
+    margin-left: 55px;
+  }
+  .carouselGaleryThumbs {
+    align-items: center;
+    justify-content: center;
+  }
+  .productImage {
+    width: 80%;
+  }
+  .carouselGaleryThumbs,
+  .swiper-wrapper {
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+  }
+}
+/* ----------------------------------- */
+
+/* TEXT----------------------------------------*/
 
 .sellingPrice .currencyContainer,
 .sellingPrice,

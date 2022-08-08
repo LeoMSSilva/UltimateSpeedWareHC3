@@ -1,25 +1,29 @@
 /* Flex Layout Header */
-.flexRowContent.flexRowContent--header,
+.flexRow--header,
 .flexRowContent.flexRowContent--header-mobile {
-  background-color: #151f32;
-  justify-content: space-between;
-  align-items: center;
+width: 100%;
+background-color: #151f32;
+justify-content: space-between;
+align-items: center;
 }
-
 .flexRowContent.flexRowContent--header {
   padding: 0.75rem 2.5rem 0.5rem;
 }
-
 .flexRowContent.flexRowContent--header-mobile {
   padding-left: 18px;
   padding-right: 18px;
 }
-
 .flexCol.flexCol--header,
 .flexCol.flexCol--header-mobile {
   flex-direction: row;
   align-items: center;
 }
+.flexRowContent--header {
+  max-width: 1600px;
+  width: 100%;
+  margin: auto;
+}
+/* ------------------- */
 
 /* Flex Layout Footer */
 /* .flexRow, */
@@ -52,7 +56,8 @@
 
 /* PDP */
 .flexCol--productOne {
-  max-width: 1200px;
+  max-width: 1600px;
+  width: 80vw;
   padding: 1rem 2rem;
   background-color: #ffffff;
   border-top: 0.5rem solid #151f32;
@@ -66,13 +71,25 @@
   max-width: 400px;
 }
 
+@media (max-width: 1440px){
+  .flexCol--productOne {
+    max-width: 92%;
+
+  }
+}
 .flexCol--productColTwo {
   max-width: 800px;
+  /* width: 100%; */
   text-align: center;
+  align-items: center;
 }
 
 .flexColChild--productOne {
   width: 100%;
+}
+.flexColChild--productColTwo {
+  height: 100%;
+  margin-top: 5px;
 }
 
 .flexCol--productColTwo :global(.vtex-button) {

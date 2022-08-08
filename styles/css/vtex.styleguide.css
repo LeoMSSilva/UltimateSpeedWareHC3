@@ -31,3 +31,8 @@
 :global(.vtex-toast) {
   max-width: 20rem;
 }
+:global(.vtex-reviews-and-ratings-3-x-container){
+  max-width: 1600px;
+  width: 80%;
+  margin-bottom: 20px;
+}

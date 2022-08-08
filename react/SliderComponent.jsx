@@ -21,7 +21,6 @@ export default function SliderComponent() {
       try {
         const response = axios.get(
           `https://fyzduqlrdrwd7xcsan75qflehy0anpmj.lambda-url.us-east-1.on.aws/`
-          //`https://combos-api.herokuapp.com/combos/available`
         );
         await response.then(({ data }) => {
           console.log("data", data);
@@ -36,11 +35,13 @@ export default function SliderComponent() {
     getData();
   }, []);
 
-  loading && (
-    <div className={styles.spinnerContainer}>
-      <Spinner />
-    </div>
-  );
+  if (loading) {
+    return (
+      <div className={styles.spinnerContainer}>
+        <Spinner />
+      </div>
+    );
+  }
 
   if (!combos || !combos.length) return null;
 
@@ -68,21 +69,40 @@ export default function SliderComponent() {
                   src={comboItem.products[0].skus[0].image}
                   alt={comboItem.alt}
                 />
-                <h2 className={styles.SliderItemTitle}>{comboItem.products[0].name}</h2>
-                <h3 className={styles.SliderItemPrice}>{comboItem.products[0].skus[0].listPriceFormated}</h3>
+                <h2 className={styles.SliderItemTitle}>
+                  {comboItem.products[0].name}
+                </h2>
+                <h3 className={styles.SliderItemPrice}>
+                  {` ${comboItem.products[0].skus[0].listPriceFormated} `}
+                  <span>só hoje!</span>
+                </h3>
               </div>
               <div className={styles.PlusContainer}>
                 <FontAwesomeIcon icon={faPlus} />
               </div>
               <div>
-                <img src={comboItem.products[1].skus[0].image} alt={comboItem.alt} />
-                <h2 className={styles.SliderItemTitle}>{comboItem.products[1].name}</h2>
-                <h3 className={styles.SliderItemPrice}>{comboItem.products[1].skus[0].listPriceFormated}</h3>
+                <img
+                  src={comboItem.products[1].skus[0].image}
+                  alt={comboItem.alt}
+                />
+                <h2 className={styles.SliderItemTitle}>
+                  {comboItem.products[1].name}
+                </h2>
+                <h3 className={styles.SliderItemPrice}>
+                  {` ${comboItem.products[1].skus[0].listPriceFormated} `}
+                  <span>só hoje!</span>
+                </h3>
               </div>
               <div className={styles.SliderButtonContainer}>
-                <button className={styles.SliderButton}>
-                  Adicionar ao carrinho
-                </button>
+                <a
+                  href={`https://speedwarehouse--speedware.myvtex.com/checkout/cart/add?sc=1&sku=${comboItem.products[0].skus[0].sku}&qty=1&seller=1&sku=${comboItem.products[1].skus[0].sku}&qty=1&seller=1`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className={styles.SliderButton}>
+                    Adicionar ao carrinho
+                  </button>
+                </a>
               </div>
             </div>
           );
