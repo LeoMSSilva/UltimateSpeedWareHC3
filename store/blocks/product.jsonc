@@ -1,15 +1,15 @@
 {
-  "store.product": {
-    "children": [
-      "breadcrumb",
-      "flex-layout.row#productPDP",
-      "__fold__",
-      "shelf.relatedProducts#relations",
-      "__fold__",
-      "shelf.relatedProducts#suggestions",
-      "__fold__",
-      "product-reviews"
-    ]
+ "store.product": {
+  "children": [
+    "breadcrumb",
+    "flex-layout.row#productPDP",
+    "__fold__",
+    "shelf.relatedProducts#relations",
+    "__fold__",
+    "shelf.relatedProducts#suggestions",
+    "__fold__",
+    "product-reviews"
+  ]
   },
   "breadcrumb": {
     "props": {
