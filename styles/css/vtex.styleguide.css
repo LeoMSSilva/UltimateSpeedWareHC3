@@ -1,0 +1,33 @@
+:global(.vtex-reviews-and-ratings-3-x-formSection) .input {
+  color: #151f32 !important;
+  font-weight: 300;
+}
+
+:global(.vtex-reviews-and-ratings-3-x-formSection) .input::placeholder {
+  color: #151f32 !important;
+  font-weight: 300;
+}
+
+:global(.vtex-toast),
+:global(.vtex-reviews-and-ratings-3-x-formSection) :global(.vtex-button) {
+  background: linear-gradient(180deg, #ffc047 0, #fea600);
+  border-color: #fbb03b #fea600 #fea600;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  width: 100%;
+  max-width: 14rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+:global(.vtex-reviews-and-ratings-3-x-formSection) :global(.vtex-button):hover {
+  background: linear-gradient(180deg, #ffc047 0, #fbb03b);
+  transition: all 0.15s ease-in;
+}
+
+:global(.vtex-toast) {
+  max-width: 20rem;
+}

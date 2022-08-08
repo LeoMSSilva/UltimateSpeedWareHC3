@@ -1,4 +1,5 @@
 .container {
+  /* padding: 0 0 1rem; */
   width: 100%;
 }
 
@@ -81,9 +82,10 @@
 
 /* PDP */
 .productImagesContainer {
+  max-width: 25rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  margin-right: 7rem;
 }
 
 .discountInsideContainer {
@@ -94,7 +96,13 @@
 }
 
 .productImage {
-  margin: 0 auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.productImage .productImageTag {
+  max-width: 90%;
+  width: 100%;
 }
 
 .productBrand {
@@ -104,7 +112,6 @@
 }
 
 .productDescriptionTitle,
-.productDescriptionText .content,
 .shareLabel {
   text-align: center;
   color: #151f32;
@@ -113,22 +120,24 @@
 
 .productDescriptionTitle {
   font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.productDescriptionText .content {
-  font-size: 1rem;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .content {
   color: #151f32;
-  font-weight: 300;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: justify;
 }
 
-.savingPriceValue {
-  color: #0a7450;
-  font-weight: 700;
+.savingPriceValue,
+.productDescriptionTitle {
+  color:  #ffc047;
+  font-weight: 500;
+  background-color: #151f32;
+  padding: 0.2rem 0.8rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
 }
 
 .showMoreButton {
@@ -142,6 +151,61 @@
 }
 
 .showMoreButton:hover {
+  background: linear-gradient(180deg, #ffc047 0, #fbb03b);
+  transition: all 0.15s ease-in;
+}
+
+/*  */
+
+.sellingPrice .currencyContainer,
+.sellingPrice,
+.productBrand {
+  color: #007dbc;
+  font-weight: 700;
+  text-shadow: 0.15rem 0.15rem 0.15rem #ecebebc2;
+}
+
+.sellingPriceLabel,
+.sellingPrice .currencyContainer {
+  color: #151f32;
+  font-weight: 700;
+}
+
+.listPrice {
+  color: red;
+}
+
+.shippingContainer {
+  margin: auto;
+  margin-top: 1rem;
+  max-width: 200px;
+}
+
+.shippingContainer :global(.vtex-address-form__postalCode) {
+  padding-bottom: 0.8rem;
+}
+
+.shareContainer .shareLabel {
+  color: #151f32;
+}
+
+
+.button {
+  background: linear-gradient(180deg, #ffc047 0, #fea600);
+  border-color: #fbb03b #fea600 #fea600;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  width: 100%;
+  max-width: 14rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button:hover {
   background: linear-gradient(180deg, #ffc047 0, #fbb03b);
   transition: all 0.15s ease-in;
 }

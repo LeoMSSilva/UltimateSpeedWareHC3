@@ -77,6 +77,7 @@
 .minicartSummary :global(.vtex-checkout-summary-0-x-summarySmallDisclaimer),
 .minicartSummary :global(.vtex-checkout-summary-0-x-summaryItemLabel),
 .minicartSummary :global(.vtex-checkout-summary-0-x-price) {
+  /* background-color: red; */
   text-align: right;
   color: #151f32;
 }
@@ -90,6 +91,12 @@
 .minicartProductListContainer :global(.vtex-product-list-0-x-productName) {
   font-size: 0.8rem;
   font-weight: 500;
+}
+
+.minicartProductListContainer :global(.vtex-product-list-0-x-productPrice) {
+  /* position: absolute;
+  bottom: 0.5rem;
+  right: 1rem; */
 }
 
 .minicartSummary :global(.vtex-checkout-summary-0-x-price),

@@ -1,0 +1,91 @@
+.Container {
+  width: 75w;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(27, 45, 73, 1) 0%,
+    rgba(255, 255, 255, 0) 100%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.Container .Slider {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.Container .Slider .SliderItem {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  gap: 6rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex: none;
+}
+
+.SliderItemTitle {
+  color: #007dbc;
+}
+
+.SliderItemPrice {
+  color: #ffc047;
+  background-color: #151f32;
+  padding: .5rem 2rem;
+  border-radius: 8px;
+}
+
+.PlusContainer {
+  font-weight: 900;
+  font-size: 3rem;
+  width: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Chevron {
+  color: #1c283d70;
+  font-weight: 900;
+  font-size: 2rem;
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Chevron:hover {
+  color: #151f32;
+  transition: all 0.15s ease-in;
+}
+
+.SliderButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SliderButton {
+  background: linear-gradient(180deg, #ffc047 0, #fea600);
+  border-color: #fbb03b #fea600 #fea600;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 0;
+  padding: 0.8em 1.4rem;
+  cursor: pointer;
+}
+
+.SliderButton:hover {
+  background: linear-gradient(180deg, #fbb03b 0, #fea600);
+  transition: all 0.15s ease-in;
+}
+
+

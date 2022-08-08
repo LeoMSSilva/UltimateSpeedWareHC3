@@ -3,6 +3,7 @@
 .searchResultContainer {
   padding: 0;
   max-width: 100%;
+  /* background-color: red; */
 }
 
 .searchResultContainer--search-not-found {
@@ -22,6 +23,7 @@
 }
 
 .orderByButton--result-order-by {
+  /* border: 0.125rem solid #151f3280; */
   border: none;
   outline: none;
   border-radius: 0.25rem;
@@ -79,6 +81,11 @@
 }
 
 /* Filter-nav */
+
+/* .filters--layout {
+  margin-top: 5rem;
+} */
+
 .filterMessage,
 .filterTitleSpan,
 .filterItem :global(.vtex-checkbox__label),
@@ -114,17 +121,63 @@
   font-size: 0.9rem;
 }
 
+/*aqui*/
+
+/* .filterTitle,
+.filterItem {
+  font-size: 0.9rem;
+  color: red;
+}
+
+.filterTitle {
+  color: #545b64;
+  font-weight: 500;
+} */
+
+/*
+.filterApplyButtonWrapper :global(.vtex-button),
+.filterClearButtonWrapper :global(.vtex-button) {
+  background: linear-gradient(180deg, #ffc047 0, #fea600);
+  border-color: #fbb03b #fea600 #fea600;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.filterApplyButtonWrapper :global(.vtex-button):hover,
+.filterClearButtonWrapper :global(.vtex-button):hover {
+  background: linear-gradient(180deg, #ffc047 0, #fbb03b);
+  transition: all 0.15s ease-in;
+} */
+
+/*aqui*/
+
 /* Gallery Products */
+
 .gallery {
   margin-top: 5rem;
   margin-right: auto;
+  /* display: flex;
+  justify-content: space-around;
+  align-items: center; */
 }
 
 .galleryItem--gallery-search-result {
   margin: 0 0 3rem 3rem;
   width: 16rem;
+  /* height: 18rem; */
+  /* width: 18rem;
+  height: 22rem;
+  background: transparent;
+  color: #151f32;
+  line-height: 1rem; */
   border-radius: 0 0.5rem;
   padding: 0.5rem;
+  /* background: radial-gradient(#151f3233, #151f3266, #151f3299, #151f32bb); */
+  /* background-color: #cdcdcd66;
+  box-shadow: 0.125rem 0.125rem 0.25rem 0 #151f3233;
+  border: #151f3233 solid 0.001rem; */
+
+  /* background-color: red; */
 }
 
 .buttonShowMore :global(.vtex-button) {
@@ -140,6 +193,7 @@
   font-style: italic;
   font-weight: 700;
   border-radius: 0.5rem;
+  /* border: #151f32 solid 0.125rem; */
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.04);
 }
 
@@ -149,25 +203,108 @@
 }
 
 /* Search Not Found */
+.searchResultContainer :global(.vtex-search-result) {
+  /* color: red; */
+}
+
 .searchNotFoundOops,
 .searchNotFoundInfo,
 .searchNotFoundWhatDoIDo,
 .searchNotFoundWhatToDoDotsContainer {
   color: #151f32;
+  /* color: red */
 }
 
 .notFound--layout .galleryTitle--layout{
   padding-top: 2.5rem;
+
   width: 100%;
   text-align: center;
   color: #fea600;
   text-shadow: 0.15rem 0.15rem 0.15rem #151f3233;
+
   font-weight: 900;
   font-size: 3.2rem;
   line-height: 3rem;
   margin: 0;
+
+  /* background-color: #151f3299; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh; */
 }
 
 .searchResultContainer--search-notfound {
   padding: 30px;
 }
+
+/* Search Reasult On Mobile */
+/* @media (max-width: 1024px) {
+  .filtersWrapperMobile--filter-nav-search-result {
+    margin: 10px 0 0 0;
+    height: 30px;
+    background-color: #ec7211;
+    background-image: linear-gradient(180deg, #f67c1b 0, #e15500);
+    border-color: #e76d0c #e15500 #e15500;
+    border: 1px solid;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 hsl(0deg 0% 100% / 20%);
+  }
+
+  .filterPopupTitle--filter-nav-search-result {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .filterIcon--filter-nav-search-result {
+    display: none;
+    visibility: hidden;
+  }
+
+  .filterBreadcrumbsText--filter-nav-search-result,
+  .filterBreadcrumbsItemName--filter-nav-search-result {
+    font-size: 18px;
+    color: #333333;
+  }
+
+  .caretIcon--filter-nav-search-result {
+    color: #e47911;
+    padding-left: 8px;
+  }
+
+  .orderByButton {
+    justify-content: center;
+  }
+
+  .orderByDropdown {
+    width: 100%;
+    right: 0;
+  }
+
+  .galleryItem--gallery-search-result {
+    margin: 10px 10px 20px 10px;
+    flex-basis: 47% !important;
+  }
+
+  .buttonShowMore {
+    margin-top: 10px;
+  }
+
+  .buttonShowMore :global(.vtex-button) {
+    width: 50%;
+    height: 40px;
+  }
+}
+
+@media (max-width: 499px) {
+  .galleryItem--gallery-search-result {
+    margin: 10px 10px 20px 10px;
+    flex-basis: 100% !important;
+  }
+
+  .buttonShowMore :global(.vtex-button) {
+    width: 100%;
+  }
+} */

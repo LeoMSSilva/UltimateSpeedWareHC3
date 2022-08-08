@@ -50,5 +50,7 @@
 .sliderTrackContainer--slider-products{
   width: 96%;
   margin: auto;
+  padding: 1rem;
   padding-right: 2.2rem;
 }
+
