@@ -110,3 +110,7 @@
   background: linear-gradient(180deg, #fbb03b 0, #fea600);
   transition: all 0.15s ease-in;
 }
+
+a {
+  text-decoration: none;
+}
