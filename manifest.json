@@ -10,12 +10,18 @@
     "assets": "0.x",
     "styles": "2.x",
     "store": "0.x",
-    "docs": "0.x"
+    "docs": "0.x",
+    "react": "3.x",
+    "messages": "1.x",
+    "admin": "0.x"
   },
   "scripts": {
     "postreleasy": "vtex publish --verbose",
     "prereleasy": "bash lint.sh"
   },
+  "registries": [
+    "smartcheckout"
+  ],
   "credentialType": "absolute",
   "policies": [],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema",
@@ -60,6 +66,7 @@
     "vtex.checkout-summary": "0.x",
     "vtex.product-list": "0.x",
     "vtex.product-price": "1.x",
-    "vtex.store-form": "0.x"
+    "vtex.store-form": "0.x",
+    "vtex.css-handles": "0.x"
   }
 }
