@@ -188,13 +188,13 @@
     },
     "children": [
       "product-summary-image#search-result",
-      "product-summary-space",
+      // "product-summary-space",
       "product-summary-name#search-result",
-      "product-summary-space",
+      // "product-summary-space",
       "product-summary-description#search-result",
-      "product-summary-space",
+      // "product-summary-space",
       "product-summary-price",
-      "product-summary-space",
+      // "product-summary-space",
       "add-to-cart-button#search-result"
     ]
   },

@@ -12,7 +12,7 @@
 
 .nameContainer {
   line-height: 1.4;
-  padding: .8rem 0 0;
+  padding: 0;
 }
 
 .productNameContainer,
@@ -46,6 +46,11 @@
   text-overflow: ellipsis;
 }
 
+.description--description-search-result{
+  font-size: 0.9rem;
+  color: #151f32;
+}
+
 .price_sellingPriceLabel,
 .price_installmentContainer {
   color: #0a742a;
@@ -56,12 +61,22 @@
 .priceContainer,
 .productPriceClass,
 .sellingPriceContainer,
-.sellingPrice,
-.currencyContainer,
+/* .sellingPrice, */
+/* .currencyContainer, */
 .price_className,
-.price_sellingPriceContainer,
-.price_sellingPrice {
+.price_sellingPriceContainer
+/* .price_sellingPrice */
+ {
   padding: 0;
+  width: 100%;
+}
+
+/* .sellingPrice, */
+.price_sellingPriceContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
   width: 100%;
 }
 
@@ -112,4 +127,17 @@
   box-shadow: 0.125rem 0.125rem 0.25rem 0 #151f3233;
   border: #151f3233 solid 0.001rem;
   max-height: 22rem;
+}
+
+@media (max-width: 768px) {
+  .productBrand{
+    font-size: 1rem;
+  }
+
+  .price_installmentContainer{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 0.7rem;
+  }
 }

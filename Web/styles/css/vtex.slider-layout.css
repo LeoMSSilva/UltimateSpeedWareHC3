@@ -54,3 +54,18 @@
   padding-right: 2.2rem;
 }
 
+@media (max-width: 768px) {
+  .sliderLayoutContainer {
+    width: 100%!important;
+    margin: 0!important;
+    padding: 0!important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sliderTrack--slider-products{
+    margin-left: -1rem;
+    margin-right: 1rem;
+  }
+
+}
