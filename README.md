@@ -25,7 +25,11 @@
 
 This repository is about coders 3 final challenge.
 
-It consists of a virtual store created with the low code **VTEX IO** tool.
+It consists of a virtual store created with the low code **VTEX IO** tool. 
+
+The project contains a new **admin panel** called combos, containing the combinations of products purchased together. 
+
+For the backend, **VTEX APIs** and **AWS services** were used (**AWS EC2**, **AWS Lambda** and **AWS DynamoDB**)
 
 ---
 
@@ -85,8 +89,8 @@ SSH is a secure protocol, but you need to register a key ssh in your github befo
 - VTEX IO
 - AWS
 - AWS EC2
-- AWS Lambda
 - AWS DynamoDB
+- AWS Lambda
 - Node
 - JavaScript
 - TypeScript
